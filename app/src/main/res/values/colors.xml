@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="plusTextLList">#044996</color>
+    <color name="subTextLList">#991B03</color>
+    <color name="multiTextLList">#219B03</color>
+    <color name="devTextLList">#8B7103</color>
+    <color name="plusBackGround">#66AFFE</color>
+    <color name="subBackGround">#FE2804</color>
+    <color name="multiBackGround">#76CC5F</color>
+    <color name="devBackGround">#FED11A</color>
+    <color name="tabItems">#fff</color>
+
+
+</resources>

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pop"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/pop"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/tthink" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/image"
+            android:text="Fast Challenge"
+            android:textColor="#fff"
+            android:textSize="34sp"
+            app:fontFamily="@font/aclonica" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:background="@drawable/newbackground"
+        android:orientation="vertical"
+        android:paddingTop="8dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/background_color"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/plus"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginRight="16dp"
+                            android:src="@drawable/plus" />
+
+                        <TextView
+                            android:id="@+id/plustext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/plus"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:fontFamily="sans-serif-light"
+                            android:text="collect"
+                            android:textAllCaps="true"
+                            android:textAppearance="@style/Widget.AppCompat.Light.ActionButton.Overflow"
+                            android:textColor="#66AFFE"
+                            android:textSize="24sp"
+                            android:textStyle="bold|italic" />
+
+                        <Button
+                            android:id="@+id/plusButton"
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_below="@id/plustext"
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginBottom="16dp"
+                            android:background="@drawable/button_shape"
+                            android:text="start"
+                            android:textColor="#FA85AB"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/background_color"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/sub"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginRight="16dp"
+                            android:src="@drawable/sub" />
+
+                        <TextView
+                            android:id="@+id/subtext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/sub"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:fontFamily="sans-serif-light"
+                            android:text="subtract"
+                            android:textAllCaps="true"
+                            android:textAppearance="@style/Widget.AppCompat.Light.ActionButton.Overflow"
+                            android:textColor="#FE2804"
+                            android:textSize="24sp"
+                            android:textStyle="bold|italic" />
+
+                        <Button
+                            android:id="@+id/subButton"
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_below="@id/subtext"
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginBottom="16dp"
+                            android:background="@drawable/button_shape"
+                            android:text="start"
+                            android:textColor="#FA85AB"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/background_color"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/multi"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginRight="16dp"
+                            android:src="@drawable/multi" />
+
+                        <TextView
+                            android:id="@+id/multitext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/multi"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:fontFamily="sans-serif-light"
+                            android:text="multiply"
+                            android:textAllCaps="true"
+                            android:textAppearance="@style/Widget.AppCompat.Light.ActionButton.Overflow"
+                            android:textColor="#76CC5F"
+                            android:textSize="24sp"
+                            android:textStyle="bold|italic" />
+
+                        <Button
+                            android:id="@+id/multiButton"
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_below="@id/multitext"
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginBottom="16dp"
+                            android:background="@drawable/button_shape"
+                            android:text="start"
+                            android:textColor="#FA85AB"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/background_color"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/dev"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginRight="16dp"
+                            android:src="@drawable/dev" />
+
+                        <TextView
+                            android:id="@+id/devitext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/dev"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:fontFamily="sans-serif-light"
+                            android:text="division"
+                            android:textAllCaps="true"
+                            android:textAppearance="@style/Widget.AppCompat.Light.ActionButton.Overflow"
+                            android:textColor="#FED11A"
+                            android:textSize="24sp"
+                            android:textStyle="bold|italic" />
+
+                        <Button
+                            android:id="@+id/devButton"
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_below="@id/devitext"
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginBottom="16dp"
+                            android:background="@drawable/button_shape"
+                            android:text="start"
+                            android:textColor="#FA85AB"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/randomButton"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:background="@drawable/round_button"
+            android:gravity="center"
+            android:text="Random"
+            android:textAlignment="center"
+            android:textColor="#FA85AB"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
