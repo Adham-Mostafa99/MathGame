@@ -26,34 +26,44 @@ public class MultiFragment extends Fragment {
         public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
             switch (i) {
                 case 0:
-//                    moveToPlay();
-//                    break;
-//                case 1:
-//                    moveToPlay();
-//                    break;
-//                case 2:
-//                    moveToPlay();
-//                    break;
-//                case 3:
-//                    moveToPlay();
-//                    break;
-//                case 4:
-//                    moveToPlay();
-//                    break;
-//                case 5:
-//                    moveToPlay();
-//                    break;
-//                case 6:
-//                    moveToPlay();
-//                    break;
-//                case 7:
-//                    moveToPlay();
-//                    break;
-//                case 8:
-//                    moveToPlay();
-//                    break;
-//                case 9:
-//                    moveToPlay();
+                    setLevelInfo(10, 20, 1);
+                    moveToPlay(GameActivity.class);
+                    break;
+                case 1:
+                    setLevelInfo(20, 30, 2);
+                    moveToPlay(GameActivity.class);
+                    break;
+                case 2:
+                    setLevelInfo(30, 40, 3);
+                    moveToPlay(GameActivity.class);
+                    break;
+                case 3:
+                    setLevelInfo(40, 50, 4);
+                    moveToPlay(GameActivity.class);
+                    break;
+                case 4:
+                    setLevelInfo(50, 60, 5);
+                    moveToPlay(GameActivity.class);
+                    break;
+                case 5:
+                    setLevelInfo(60, 70, 6);
+                    moveToPlay(GameActivity.class);
+                    break;
+                case 6:
+                    setLevelInfo(70, 80, 7);
+                    moveToPlay(GameActivity.class);
+                    break;
+                case 7:
+                    setLevelInfo(80, 90, 8);
+                    moveToPlay(GameActivity.class);
+                    break;
+                case 8:
+                    setLevelInfo(90, 100, 9);
+                    moveToPlay(GameActivity.class);
+                    break;
+                case 9:
+                    setLevelInfo(100, 110, 10);
+                    moveToPlay(GameActivity.class);
                     break;
             }
         }
@@ -95,5 +105,12 @@ public class MultiFragment extends Fragment {
         Intent intent = new Intent();
         intent.setClass(getActivity(), cls);
         startActivity(intent);
+    }
+
+    //set levels information
+    private void setLevelInfo(int min, int max, int level) {
+        GameActivity.MIN_VALUE = min;
+        GameActivity.MAX_VALUE = max;
+        GameActivity.LEVEL = level;
     }
 }

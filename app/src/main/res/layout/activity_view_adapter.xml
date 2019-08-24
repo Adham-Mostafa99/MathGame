@@ -12,6 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:tabTextColor="#fff"
+        app:tabGravity="fill"
+        app:tabMaxWidth="0dp"
         android:background="#EFEDF1" />
 
     <androidx.viewpager.widget.ViewPager

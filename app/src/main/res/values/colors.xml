@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorPrimary">#00BCD4</color>
+    <color name="colorPrimaryDark">#026A77</color>
     <color name="colorAccent">#D81B60</color>
     <color name="plusTextLList">#044996</color>
     <color name="subTextLList">#991B03</color>
@@ -12,6 +12,11 @@
     <color name="multiBackGround">#76CC5F</color>
     <color name="devBackGround">#FED11A</color>
     <color name="tabItems">#fff</color>
-
+    <color name="wrongAnswer">#FF1400</color>
+    <color name="rightAnswer">#07CA10</color>
+    <color name="plusScrolBackground">#F5F7FC</color>
+    <color name="subScrollBackground">#FCF6F3</color>
+    <color name="multiScrollBackground">#F4FAF2</color>
+    <color name="devScrollBackground">#FCFBEE</color>
 
 </resources>

@@ -18,15 +18,23 @@ public class ViewAdapter extends AppCompatActivity {
             switch (tab.getPosition()) {
                 case 0:
                     tabLayout.setTabTextColors(ContextCompat.getColor(getApplicationContext(), R.color.tabItems), ContextCompat.getColor(getApplicationContext(), R.color.plusBackGround));
+                    GameActivity.OPERATION_SYMBOL=" + ";
+                    GameActivity.CHECK_PAGE=1;
                     break;
                 case 1:
                     tabLayout.setTabTextColors(ContextCompat.getColor(getApplicationContext(), R.color.tabItems), ContextCompat.getColor(getApplicationContext(), R.color.subBackGround));
+                    GameActivity.OPERATION_SYMBOL=" - ";
+                    GameActivity.CHECK_PAGE=2;
                     break;
                 case 2:
                     tabLayout.setTabTextColors(ContextCompat.getColor(getApplicationContext(), R.color.tabItems), ContextCompat.getColor(getApplicationContext(), R.color.multiBackGround));
+                    GameActivity.OPERATION_SYMBOL=" * ";
+                    GameActivity.CHECK_PAGE=3;
                     break;
                 case 3:
                     tabLayout.setTabTextColors(ContextCompat.getColor(getApplicationContext(), R.color.tabItems), ContextCompat.getColor(getApplicationContext(), R.color.devBackGround));
+                    GameActivity.OPERATION_SYMBOL=" / ";
+                    GameActivity.CHECK_PAGE=4;
                     break;
             }
         }

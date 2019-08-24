@@ -3,15 +3,13 @@ package com.example.mathgame;
 
 import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.TextView;
+
+import androidx.fragment.app.Fragment;
 
 import java.util.ArrayList;
 
@@ -21,56 +19,65 @@ import java.util.ArrayList;
 public class PlusFragment extends Fragment {
 
 
-    public PlusFragment() {
-        // Required empty public constructor
-    }
-
-
     private ListView plus_list;
     private int color_list = (R.color.plusTextLList);
-
     private AdapterView.OnItemClickListener onItemClickListener = new AdapterView.OnItemClickListener() {
         @Override
         public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
             switch (i) {
                 case 0:
+                    setLevelInfo(10, 30, 1);
                     moveToPlay(GameActivity.class);
-//                    break;
-//                case 1:
-//                    moveToPlay();
-//                    break;
-//                case 2:
-//                    moveToPlay();
-//                    break;
-//                case 3:
-//                    moveToPlay();
-//                    break;
-//                case 4:
-//                    moveToPlay();
-//                    break;
-//                case 5:
-//                    moveToPlay();
-//                    break;
-//                case 6:
-//                    moveToPlay();
-//                    break;
-//                case 7:
-//                    moveToPlay();
-//                    break;
-//                case 8:
-//                    moveToPlay();
-//                    break;
-//                case 9:
-//                    moveToPlay();
+                    break;
+                case 1:
+                    setLevelInfo(30, 50, 2);
+                    moveToPlay(GameActivity.class);
+                    break;
+                case 2:
+                    setLevelInfo(50, 70, 3);
+                    moveToPlay(GameActivity.class);
+                    break;
+                case 3:
+                    setLevelInfo(70, 90, 4);
+                    moveToPlay(GameActivity.class);
+                    break;
+                case 4:
+                    setLevelInfo(90, 110, 5);
+                    moveToPlay(GameActivity.class);
+                    break;
+                case 5:
+                    setLevelInfo(110, 130, 6);
+                    moveToPlay(GameActivity.class);
+                    break;
+                case 6:
+                    setLevelInfo(130, 150, 7);
+                    moveToPlay(GameActivity.class);
+                    break;
+                case 7:
+                    setLevelInfo(150,170, 8);
+                    moveToPlay(GameActivity.class);
+                    break;
+                case 8:
+                    setLevelInfo(170, 190, 9);
+                    moveToPlay(GameActivity.class);
+                    break;
+                case 9:
+                    setLevelInfo(190, 250, 10);
+                    moveToPlay(GameActivity.class);
                     break;
             }
         }
     };
+
+    public PlusFragment() {
+        // Required empty public constructor
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View view=inflater.inflate(R.layout.activity_plus,container,false);
+        View view = inflater.inflate(R.layout.activity_plus, container, false);
         //define ListView by it's ID
         plus_list = (ListView) view.findViewById(R.id.PlusList);
 
@@ -104,6 +111,13 @@ public class PlusFragment extends Fragment {
         Intent intent = new Intent();
         intent.setClass(getActivity(), cls);
         startActivity(intent);
+    }
+
+    //set levels information
+    private void setLevelInfo(int min, int max, int level) {
+        GameActivity.MIN_VALUE = min;
+        GameActivity.MAX_VALUE = max;
+        GameActivity.LEVEL = level;
     }
 
 }
